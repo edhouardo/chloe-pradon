@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo \"Prebuilt static site: nothing to install\"",
+  "buildCommand": "echo \"Prebuilt static site: see build.mjs\"",
+  "outputDirectory": "deploy",
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/slides/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+  ]
+}
